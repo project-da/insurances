@@ -40,7 +40,7 @@ class IndexController extends Controller
             'email' => $request->input('email'),
             'city' => $request->input('city')
         ]);
-
+        return redirect('compare');
         if ($query) {
             return back()->with('success', 'Date have been saved successfuly');
         } else {
