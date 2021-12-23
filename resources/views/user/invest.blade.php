@@ -76,7 +76,7 @@ p.yearly {
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-    <img src="..\assets\images\logo-five.png" alt="Logo" class="images" width="130">
+   
     </div>
   </div>
 </nav><br><br>

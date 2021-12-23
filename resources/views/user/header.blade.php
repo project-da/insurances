@@ -99,7 +99,7 @@ span.no {
 <!-- ============= COMPONENT ============== -->
 <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark ">
  <div class="container">
- 	 <a class="navbar-brand" href="userindex"><img class="images" src="uploads\images\logo-five.png" ></a>
+ 	 <a class="navbar-brand" href="userindex"></a>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>

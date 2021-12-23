@@ -74,11 +74,10 @@
     </div>
 
     <div class="main"><br><br>
-        <h2>Sidebar</h2>
+        <h2></h2>
         <div class="row">
             <div class="col-md-11">
                 <table class="table table-stripped table-bordered">
-
                     <tbody>
                         @foreach($list as $item)
                         <tr>
