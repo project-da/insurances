@@ -66,7 +66,9 @@ Route::post('post-registration',[AuthController::class, 'postRegistration']);
 Route::get('logout',  [AuthController::class, 'logout']);
 
 Route::get('header',  [IndexController::class, 'header']);
-Route::get('abc',  [IndexController::class, 'abc']);
+
+
+
 
 
 

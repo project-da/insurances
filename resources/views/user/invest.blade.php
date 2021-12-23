@@ -18,16 +18,23 @@
  
 </head>
   <style>
+    .container {
+    color: white;
+}
+span.no {
+    float: right;
+}
     label {
     color: blue;
 }
       nav.navbar.navbar-default {
     background: #e7e5e5;
 }
-.container {
+.container4 {
     background: whitesmoke;
     width: 53%;
     margin-right: 41%;
+    padding: 10px 37px 0px 60px;
 }
 
 .col1 {
@@ -46,19 +53,34 @@ p.yearly {
 .container2 {
     background-color: whitesmoke;
     margin-top: 11%;
-    width: 87%;
-    margin-left: 7%;
+    width: 100%;
+    padding: 92px;
+}
+
+
+.bg-warning {
+    background-color: #011a41!important;
 }
       </style>
 <body>
+
+<div class="bg-warning py-3">
+	<div class="container">
+	<span class="email"><i class="fa fa-envelope"></i>&nbsp; email@gmail.com</span> <span class="no">(+91) - 9876543210 &nbsp;&nbsp; <i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-twitter" aria-hidden="true"></i></span>
+    
+       
+	</div>
+</div>
+
+
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-    <img src="..\assets\images\Client-2.jpg" alt="Logo" class="images" width="20%">
+    <img src="..\assets\images\logo-five.png" alt="Logo" class="images" width="130">
     </div>
   </div>
 </nav><br><br>
-<div class="container"><br><Br>
+<div class="container4"><br><Br>
 
 <input type="hidden" name="id" value="{{ $Info->id}}">
 <td><img src="{{ asset('uploads/images/'. $Info->image) }}"></td> &emsp; <td><strong>{{ $Info->name }}  </strong> </td> <br><Br>

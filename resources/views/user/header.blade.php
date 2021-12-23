@@ -61,7 +61,7 @@ nav#navbar_top {
     color: #000;
 }
 li.nav-item {
-    font-size: 126%;
+    font-size: 103%;
 }
 .bg-warning {
     background-color: #011a41!important;
@@ -107,13 +107,13 @@ span.no {
 	
 
 	<ul class="navbar-nav ms-auto">
-		<li class="nav-item"><a class="nav-link" href="userindex"> Home</a></li>
-		<li class="nav-item"><a class="nav-link" href="compare"> Compare </a></li>
+		<li class="nav-item"><a class="nav-link" href="userindex"><strong> Home</strong></a></li>
+		<li class="nav-item"><a class="nav-link" href="compare"> <strong>Compare</strong> </a></li>
 		<li class="nav-item dropdown">
         @guest
               @if (Route::has('login'))
               <li class="nav-item">
-                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                <a class="nav-link" href="{{ route('login') }}"><strong>{{ __('Login') }}</strong></a>
               </li>
               @endif
 

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Investment</title>
-
-    <!-- Import bootstrap cdn -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
     <!-- Import jquery cdn -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -15,34 +15,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- CSS stylesheet -->
     <link rel="stylesheet" href="assets\css\compare.css">
+    <title>Document</title>
 </head>
 
+
 <body>
+    @include('user/header')
 
-    <!-- h-100 takes the full height of the body-->
-    <div class="container-fluid h-100">
+    <div class="sidenav">
+        <br><br>
+        <span class="name mt-2"> <strong> Invested Amount per month </strong> </span><br><br>
+        <!-- Navigation links in sidebar-->
 
-        <!-- h-100 takes the full height 
-                 of the container-->
-        <div class="row h-100">
-            <div class="col-2" id="green">
-                <img src="assets\images\Client-2.jpg" alt="Logo" class="images"><br>
-
-                <span class="name mt-3"> </span>
-                <hr>
-
-                <span class="name mt-2"> <strong> Invested Amount per month </strong> </span><br><br>
-                <!-- Navigation links in sidebar-->
-
-                <form action="/compare" method="post">
+       
+        <form action="/compare" method="post">
                     {{csrf_field()}}
                     <input type="hidden" name="min" value="500">&nbsp;
                     <input type="text" name="max">&nbsp;
                     <input type="submit" class="view" value="edit">
                 </form>
 
-                <hr>
-                <span class="inserted">Change to <a href="#" class="inserted">yearly.</a>
+        <hr>
+        <span class="inserted"><strong>Change to</strong> yearly.
                     <!---->
                 </span> <br />
                 <br />
@@ -75,101 +69,35 @@
             </div>
             <div class="col-10" style="padding: 0;">
 
-                <!-- Top navbar -->
-                <nav class="navbar navbar-expand-lg 
-                                navbar-light bg-primary">
 
-                    <button type="button" class="plantype" data-toggle="modal" data-target="#exampleModal1">
-                        Plan type
-                        <select name="plan" id="plan">
-                            <option value="100% Guaranteed"> 100% Guaranteed</a></option>
 
-                        </select></button>
+    </div>
 
-                    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title" id="exampleModalLabel">Plan Type:</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <ul class="a">
-                                    <li> <a href="{{ route('compare') }}" class="buy_link"> 100% Guaranteed</a></li>
-                                    <li> <a href="{{ route('marketlinked') }}" class="buy_link"> Market Linked</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <label class="navbar">Get money as:</label>
-                    <select name="past" id="past">
-                        <option value="All plans">All plans</option>
-                        <option value="Lumpsum">Lumpsum</option>
-                        <option value="Income for 10 Yrs"> Income for 10 Yrs</option>
-                        <option value="Income for 25 Yrs">Income for 25 Yrs</option>
-                        <option value="Income for lifetime">Income for lifetime</option>
-                    </select>
-                </nav><br><br>
-                <div>
-                    <div class="row">
-                        <div class="col-md-11">
-                            <table class="table table-stripped table-bordered">
+    <div class="main"><br><br>
+        <h2>Sidebar</h2>
+        <div class="row">
+            <div class="col-md-11">
+                <table class="table table-stripped table-bordered">
 
-                                <tbody>
-                                    @foreach($list as $item)
-                                    <tr>
-                                        <td width="2%">{{$item->id}}</td>
-                                        <td width="25%"><br> <img src="{{ asset('uploads/images/'. $item->image) }}" alt="images"> &emsp; {{ $item->name }}</td>
-                                        <td width="4%"><br>YouGet<br> {{ $item->youGive }}</td>
-                                        <td width="4%"><br>youGive <br>{{ $item->YouGet }}</td>
-                                        <td width="5%"><br>
-                                            <a href="invest/{{ $item->id }}" class="btn btn-primary btn-xs"> Get Details</a>
-                                            <!--<button type="button"class="btn btn-sm btn-success" data-toggle="modal" >{{__('Details') }}</button>-->
-                                        </td>
-                                    </tr>
-                                    @endforeach
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <div class="col-md-1">
-                            <div class="container">
-                                <hr>
-                                <div class="Advantage"><strong>Advantage</strong></div>
-                                <hr><br>
-                                <img class="get" src="assets\images\get_extra.jpg">
-                                <label class="get">Buy Online and Get Extra</label>
-                                <h6 class="matlab">Matlab zyada fayda</h6><br>
-                                <img class="get" src="assets\images\download.jpg">
-                                <label class="get">100% Calls Recorded</label>
-                                <h6 class="matlab">Honest Selling</h6><br>
-                                <img class="get" src="assets\images\download2.jpg">
-                                <label class="get">No Hidden Charges</label>
-                                <h6 class="matlab">Full Transparency</h6><br>
-                                <img class="get" src="assets\images\certified3.jpg">
-                                <label class="get">Certified Advisors</label>
-                                <h6 class="matlab">Keeping Customer First</h6><br>
-                                <img class="get" src="assets\images\download4.jpga">
-                                <label class="get">One click easy refund</label>
-                                <h6 class="matlab">Hassle Free</h6><br>
-                                <hr><br>
-                                <img class="bulb" src="assets\images\bulb.svg">
-                                <strong class="sky">Interest Rates </strong> have <strong class="red"> Consistently Fallen</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in the last 5 years
-                                <br><br>
-                                <img class="graph" src="assets\images\Graphs.svg"><br><Br><br>
-                                <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" style="width:70%"> Know More</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                    <tbody>
+                        @foreach($list as $item)
+                        <tr>
+                            <td width="2%">{{$item->id}}</td>
+                            <td width="20%"><br> <img src="{{ asset('uploads/images/'. $item->image) }}" alt="images"> &emsp;<strong> {{ $item->name }}</strong></td>
+                            <td width="4%"><br><strong>YouGet</strong><br> {{ $item->youGive  }} </td>
+                            <td width="4%"><br><strong>youGive</strong> <br>{{ $item->YouGet }}</td>
+                            <td width="5%"><br>
+                                <a href="invest/{{ $item->id }}" class="btn btn-primary btn-xs"> Get Details</a>
+                                <!--<button type="button"class="btn btn-sm btn-success" data-toggle="modal" >{{__('Details') }}</button>-->
+                            </td>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
             </div>
         </div>
-
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <!-- Modal -->
+         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -231,7 +159,6 @@
                             <div _ngcontent-ohd-c74="" class="guaranteed_investment_head"> In Case Of Death Your Family Gets </div>
                             <div _ngcontent-ohd-c74="" class="guaranteed_investment_tax_free_wrp">
                                 <div _ngcontent-ohd-c74="" class="guaranteed_investment_tax_free"><b _ngcontent-ohd-c74="" class="ng-star-inserted">₹ 1.2 L</b>
-
                                 </div>
                                 <div _ngcontent-ohd-c74="" class="guaranteed_investment_taxable"><b _ngcontent-ohd-c74="">Zero</b></div>
                             </div>
@@ -243,7 +170,7 @@
         </table>
     </div>
     <!--- //Modelbox---->
-    </div>
+
 </body>
 
 </html>

@@ -1,479 +1,368 @@
-html,
 body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
     height: 100%;
+    width: 199px;
+    position: fixed;
+    z-index: 1;
+    top: 56px;
+    left: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    padding-top: 20px;
 }
 
-#green {
-
-    background: #e7e5e5;
-    text-align: center;
-    color: black;
-    padding: 15px;
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
 }
 
-nav.navbar.navbar-expand-lg.navbar-light.bg-primary {
-    background-color: #e7e5e5 !important;
+.sidenav a:hover {
+    color: #f1f1f1;
 }
 
-.table {
-    width: 79%;
-    height: 35vh;
-    margin-left: 4%;
+.main {
+    margin-left: 173px;
+    font-size: 15px;
+    padding: 0px 50px;
 }
 
-input.rupee {
-    border: hidden;
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }   
 }
 
-span.inserted {
-    font-size: 78%;
-    margin-left: -40%;
-}
-
-select#pays {
-    border: hidden;
-    width: 91%;
-}
-
-label.pay {
-    margin-left: -45%;
-    font-size: 85%;
-}
-
-select#plan {
-    border: hidden;
-    width: 67%;
-}
-
-label.navbar-brand {
-    font-size: 100%;
-    padding: 1%;
+.sidenav {
+    padding: 0px 10px 0 15px;
 }
 
 input[type="text"] {
-    border: none;
-    width: 66%;
-}
-
-select#past {
+    width: 64%;
     border: hidden;
-    width: 16%;
-}
-
-label.navbar {
-    margin-left: 10%;
-}
-
-i.fa.fa-inr {
-    text-align: justify;
-}
-
-.container {
-    background-color: whitesmoke;
-    width: 374%;
-    height: 148%;
-    margin-left: -276%;
-    margin-top: -90%;
-}
-
-.Advantage {
-    margin-left: 32%;
-}
-
-img.get {
-    width: 13%;
-    text-align: justify;
-
-}
-
-label.get {
-    font-size: 96%;
-    text-align: justify;
-
-}
-
-.irr_block {
-    font-size: 84%;
-    text-align: justify;
-}
-
-.compare {
-    font-size: 92%;
-    text-align: justify;
-}
-
-.\> {
-    margin-left: 67%;
-    margin-top: -18%;
-    border: hidden;
-}
-
-span.name.mt-2 {
-    font-size: 90%;
-    text-align: justify;
-}
-
-
-
-h6.matlab {
-    margin-left: 20%;
-    font-size: 92%;
-}
-
-strong.sky {
-    font-size: 118%;
-    color: #0a9edb;
-}
-
-strong.red {
-    font-size: 119%;
-    color: #ef1e1e;
-    margin-left: 15%;
-}
-
-img.bulb {
-    width: 15%;
-}
-
-button.btn.btn-sm.btn-danger {
-    margin-left: 15%;
-}
-
-button.modalfade {
-    border: hidden;
-}
-
-button.plantype {
-    border: hidden;
-    text-align: -webkit-match-parent;
-}
-
-.modal-dialog {
-    width: 19%;
-    margin-left: 21%;
-    margin-top: 5%;
-}
-
-.buy_link {
-    display: inline-block;
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 2px;
-    font-family: 'Open Sans', sans-serif;
-    color: #272323;
-    margin-right: 100px;
-    margin-top: 5px;
-    position: relative;
-    padding: 20px 20px 20px 20px;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    border: black;
-}
-
-ul.a {
-    list-style-type: circle;
 }
 
 input.view {
-    border: none;
-    color: blue;
+    border: hidden;
 }
+span.inserted {
+font-size: 67%;
+}
+label.pay {
+font-size: 89%;
 
+}
+select#pays {
+width: 93%;
+}
+.irr_block {
+font-size: 78%;
+}
+.compare {
+font-size: 83%;
+}
+.\> {
+margin-left: 67%;
+margin-top: -18%;
+border: hidden;
+}
 
 
 .guaranteed-vs-fd_wrp[_ngcontent-ohd-c74] {
-    padding: 20px;
+padding: 20px;
 }
 
 .guaranteed-vs-fd_compare[_ngcontent-ohd-c74] {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .guaranteed-vs-fd_compare[_ngcontent-ohd-c74] h1[_ngcontent-ohd-c74] {
-    font-size: 16px;
-    font-weight: 600;
-    margin: 0 0 20px;
-    position: relative;
+font-size: 16px;
+font-weight: 600;
+margin: 0 0 20px;
+position: relative;
 }
 
 .guaranteed-vs-fd_sub_heading[_ngcontent-ohd-c74] {
-    display: flex;
-    flex-direction: row;
-    font-weight: 600;
-    position: relative;
+display: flex;
+flex-direction: row;
+font-weight: 600;
+position: relative;
 }
 
 .guaranteed-vs-fd_sub_heading[_ngcontent-ohd-c74] span[_ngcontent-ohd-c74] {
-    position: absolute;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    display: flex;
-    text-align: center;
-    width: 27px;
-    height: 27px;
-    background: #fff;
-    border-radius: 50px;
-    top: 16px;
-    font-size: 10px;
-    justify-content: center;
-    align-items: center;
+position: absolute;
+margin: 0 auto;
+left: 0;
+right: 0;
+display: flex;
+text-align: center;
+width: 27px;
+height: 27px;
+background: #fff;
+border-radius: 50px;
+top: 16px;
+font-size: 10px;
+justify-content: center;
+align-items: center;
 }
 
 .guaranteed_fixed_deposits[_ngcontent-ohd-c74],
 .guaranteed_milestone_plan[_ngcontent-ohd-c74] {
-    float: left;
-    width: 50%;
-    text-align: center;
-    font-size: 14px;
-    padding: 7px 0;
+float: left;
+width: 50%;
+text-align: center;
+font-size: 14px;
+padding: 7px 0;
 }
 
 .guaranteed_milestone_plan[_ngcontent-ohd-c74] {
-    display: block;
-    background: #e0eee1;
+display: block;
+background: #e0eee1;
 }
 
 .guaranteed_fixed_deposits[_ngcontent-ohd-c74],
 .guaranteed_milestone_plan[_ngcontent-ohd-c74] {
-    float: left;
-    width: 50%;
-    text-align: center;
-    font-size: 14px;
-    padding: 7px 0;
+float: left;
+width: 50%;
+text-align: center;
+font-size: 14px;
+padding: 7px 0;
 }
 
 .guaranteed_fixed_deposits[_ngcontent-ohd-c74] {
-    background: rgba(204, 111, 98, .34901960784313724) 0 0 no-repeat padding-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+background: rgba(204, 111, 98, .34901960784313724) 0 0 no-repeat padding-box;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .modal-content {
-    width: 259%;
-    margin-left: -16%;
+width: 150%;
 }
-
 .guaranteed_investment[_ngcontent-ohd-c74] {
-    margin-top: 20px;
+margin-top: 20px;
 }
 
 .guaranteed_investment[_ngcontent-ohd-c74] p[_ngcontent-ohd-c74] {
-    font-size: 14px;
-    text-align: center;
-    color: #757575;
-    margin: 0;
-    padding: 0;
+font-size: 14px;
+text-align: center;
+color: #757575;
+margin: 0;
+padding: 0;
 }
 
 .guaranteed_investment[_ngcontent-ohd-c74] h2[_ngcontent-ohd-c74] {
-    text-align: center;
-    color: #0652dd;
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
+text-align: center;
+color: #0652dd;
+margin: 0;
+padding: 0;
+font-size: 18px;
 }
 
 .guaranteed_investment_head[_ngcontent-ohd-c74] {
-    background: #f2f6fe;
-    text-align: center;
-    padding: 4px 0;
-    font-size: 14px;
-    margin-top: 20px;
-    color: #757575;
-    font-weight: 500;
+background: #f2f6fe;
+text-align: center;
+padding: 4px 0;
+font-size: 14px;
+margin-top: 20px;
+color: #757575;
+font-weight: 500;
 }
 
 .guaranteed_investment_tax_free_wrp[_ngcontent-ohd-c74] {
-    display: flex;
-    margin-top: 20px;
-    align-items: center;
+display: flex;
+margin-top: 20px;
+align-items: center;
 }
 
 .guaranteed_investment_tax_free[_ngcontent-ohd-c74] {
-    width: 50%;
-    text-align: center;
-    justify-content: center;
-    border-right: 1px solid hsla(0, 0%, 43.9%, .25098039215686274);
+width: 50%;
+text-align: center;
+justify-content: center;
+border-right: 1px solid hsla(0, 0%, 43.9%, .25098039215686274);
 }
 
 .guaranteed_investment_tax_free_wrp[_ngcontent-ohd-c74] b[_ngcontent-ohd-c74] {
-    display: block;
-    font-size: 16px;
-    font-weight: 500;
+display: block;
+font-size: 16px;
+font-weight: 500;
 }
 
 .guaranteed_investment_tax_free[_ngcontent-ohd-c74] span[_ngcontent-ohd-c74] {
-    width: 61px;
-    font-size: 12px;
-    color: #fff;
-    background: #65ac68;
-    margin: 0 auto;
-    display: inline-block;
-    border-radius: 2px;
+width: 61px;
+font-size: 12px;
+color: #fff;
+background: #65ac68;
+margin: 0 auto;
+display: inline-block;
+border-radius: 2px;
 }
 
 .guaranteed_investment_taxable[_ngcontent-ohd-c74] {
-    width: 50%;
-    text-align: center;
-    justify-content: center;
+width: 50%;
+text-align: center;
+justify-content: center;
 }
 
 .guaranteed_investment_tax_free_wrp[_ngcontent-ohd-c74] b[_ngcontent-ohd-c74] {
-    display: block;
-    font-size: 16px;
-    font-weight: 500;
+display: block;
+font-size: 16px;
+font-weight: 500;
 }
 
 .guaranteed_investment_taxable[_ngcontent-ohd-c74] span[_ngcontent-ohd-c74] {
-    width: 61px;
-    font-size: 12px;
-    color: #fff;
-    background: #cc6f62;
-    margin: 0 auto;
-    display: inline-block;
-    border-radius: 2px;
+width: 61px;
+font-size: 12px;
+color: #fff;
+background: #cc6f62;
+margin: 0 auto;
+display: inline-block;
+border-radius: 2px;
 }
 
 .guaranteed_investment_head[_ngcontent-ohd-c74] {
-    background: #f2f6fe;
-    text-align: center;
-    padding: 4px 0;
-    font-size: 14px;
-    margin-top: 20px;
-    color: #757575;
-    font-weight: 500;
+background: #f2f6fe;
+text-align: center;
+padding: 4px 0;
+font-size: 14px;
+margin-top: 20px;
+color: #757575;
+font-weight: 500;
 }
 
 .guaranteed_investment_tax_free_wrp[_ngcontent-ohd-c74] {
-    display: flex;
-    margin-top: 20px;
-    align-items: center;
+display: flex;
+margin-top: 20px;
+align-items: center;
 }
 
 .guaranteed_investment_tax_free[_ngcontent-ohd-c74] {
-    width: 50%;
-    text-align: center;
-    justify-content: center;
-    border-right: 1px solid hsla(0, 0%, 43.9%, .25098039215686274);
+width: 50%;
+text-align: center;
+justify-content: center;
+border-right: 1px solid hsla(0, 0%, 43.9%, .25098039215686274);
 }
 
 .guaranteed_investment_tax_free_wrp[_ngcontent-ohd-c74] b[_ngcontent-ohd-c74] {
-    display: block;
-    font-size: 16px;
-    font-weight: 500;
+display: block;
+font-size: 16px;
+font-weight: 500;
 }
 
 .guaranteed_investment_returns_after_tax[_ngcontent-ohd-c74] {
-    width: 50%;
-    text-align: center;
-    justify-content: center;
+width: 50%;
+text-align: center;
+justify-content: center;
 }
 
 .guaranteed_investment_returns_after_tax[_ngcontent-ohd-c74] ul[_ngcontent-ohd-c74] {
-    margin: 0 auto;
-    list-style: none;
-    width: 270px;
-    float: left;
-    display: block;
+margin: 0 auto;
+list-style: none;
+width: 270px;
+float: left;
+display: block;
 }
 
 .guaranteed_investment_returns_after_tax[_ngcontent-ohd-c74] ul[_ngcontent-ohd-c74] li[_ngcontent-ohd-c74] {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    width: auto;
-    float: left;
-    text-align: center;
-    width: 32%;
+margin: 0;
+padding: 0;
+list-style: none;
+width: auto;
+float: left;
+text-align: center;
+width: 32%;
 }
 
 .guaranteed_investment_returns_after_tax[_ngcontent-ohd-c74] ul.tax_slab[_ngcontent-ohd-c74] {
-    border: 0.6000000238418579px dashed #5c93f7;
-    padding: 8px;
-    border-radius: 4px;
-    float: left;
-    position: relative;
-    margin-left: 30px;
-    margin-top: 10px;
+border: 0.6000000238418579px dashed #5c93f7;
+padding: 8px;
+border-radius: 4px;
+float: left;
+position: relative;
+margin-left: 30px;
+margin-top: 10px;
 }
 
 .guaranteed_investment_returns_after_tax[_ngcontent-ohd-c74] ul[_ngcontent-ohd-c74] {
-    margin: 0 auto;
-    list-style: none;
-    width: 270px;
-    float: left;
-    display: block;
+margin: 0 auto;
+list-style: none;
+width: 212px;
+float: left;
+display: block;
 }
 
 .guaranteed_investment_returns_after_tax[_ngcontent-ohd-c74] ul.tax_slab[_ngcontent-ohd-c74] span[_ngcontent-ohd-c74] {
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    background: #fff;
-    width: 70px;
-    padding: 0;
-    font-size: 12px;
-    color: #5c93f7;
+position: absolute;
+bottom: -8px;
+left: 0;
+right: 0;
+margin: 0 auto;
+background: #fff;
+width: 70px;
+padding: 0;
+font-size: 12px;
+color: #5c93f7;
 }
 
 .guaranteed_investment_returns_after_tax[_ngcontent-ohd-c74] ul[_ngcontent-ohd-c74] li[_ngcontent-ohd-c74] {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    width: auto;
-    float: left;
-    text-align: center;
-    width: 32%;
+margin: 0;
+padding: 0;
+list-style: none;
+width: auto;
+float: left;
+text-align: center;
+width: 32%;
 }
 
 .guaranteed_investment_head[_ngcontent-ohd-c74] {
-    background: #f2f6fe;
-    text-align: center;
-    padding: 4px 0;
-    font-size: 14px;
-    margin-top: 20px;
-    color: #757575;
-    font-weight: 500;
+background: #f2f6fe;
+text-align: center;
+padding: 4px 0;
+font-size: 14px;
+margin-top: 20px;
+color: #757575;
+font-weight: 500;
 }
 
 .guaranteed_investment_tax_free_wrp[_ngcontent-ohd-c74] {
-    display: flex;
-    margin-top: 20px;
-    align-items: center;
+display: flex;
+margin-top: 20px;
+align-items: center;
 }
 
 .guaranteed_investment_tax_free_wrp[_ngcontent-ohd-c74] b[_ngcontent-ohd-c74] {
-    display: block;
-    font-size: 16px;
-    font-weight: 500;
+display: block;
+font-size: 16px;
+font-weight: 500;
 }
 
 .guaranteed_investment_tax_free[_ngcontent-ohd-c74] {
-    width: 50%;
-    text-align: center;
-    justify-content: center;
-    border-right: 1px solid hsla(0, 0%, 43.9%, .25098039215686274);
+width: 50%;
+text-align: center;
+justify-content: center;
+border-right: 1px solid hsla(0, 0%, 43.9%, .25098039215686274);
 }
 
 .guaranteed_investment_taxable[_ngcontent-ohd-c74] {
-    width: 50%;
-    text-align: center;
-    justify-content: center;
+width: 50%;
+text-align: center;
+justify-content: center;
 }
 
 .guaranteed_investment_tax_free_wrp[_ngcontent-ohd-c74] b[_ngcontent-ohd-c74] {
-    display: block;
-    font-size: 16px;
-    font-weight: 500;
+display: block;
+font-size: 16px;
+font-weight: 500;
 }
 .product_name[_ngcontent-dxi-c83] {
 display: block;
@@ -798,7 +687,4 @@ color: #fff;
 text-align: center;
 font-size: 16px;
 font-weight: 500;
-}
-img.images {
-    width: 53%;
 }
