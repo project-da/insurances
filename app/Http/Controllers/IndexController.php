@@ -78,7 +78,16 @@ class IndexController extends Controller
      ];
      return view('user/invest', $data);
  }
- 
+ function header()
+ { 
+     return view('user/header');
+ }
+ function abc()
+ { 
+    $data = array(
+        'list' => DB::table('policies')->get()
+    );
+    return view('user/abc', $data);
 
-
+ }
 }

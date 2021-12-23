@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\AdminController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\AuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -57,5 +58,15 @@ Route::post('/marketlinked',[IndexController::class,'marketlinked'])->name('mark
 Route::get('/invest', [IndexController::class, 'invest']);
 Route::get('/invest', [IndexController::class, 'invest'])->name('invest');
 Route::get('invest/{id}', [IndexController::class, 'invest']);
+
+Route::get('login',[AuthController::class,'login']);
+Route::post('login',  [AuthController::class, 'postLogin'])->name('login'); 
+Route::get('registration',[AuthController::class,'registration']);
+Route::post('post-registration',[AuthController::class, 'postRegistration']); 
+Route::get('logout',  [AuthController::class, 'logout']);
+
+Route::get('header',  [IndexController::class, 'header']);
+Route::get('abc',  [IndexController::class, 'abc']);
+
 
 

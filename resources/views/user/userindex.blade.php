@@ -26,31 +26,18 @@
 <!-- Google Tag Manager (noscript) -->
 <!-- End Google Tag Manager (noscript) -->
  <!-- NAVBAR ================================================== -->  
-<div class="header-section" id="totop">
-	<div class="layout">
-		<div class="row">
-			<div class="col-md-12">						
-				<div id='logo'>
-					<ul>
-						<li class='active'>  <a href="index" class="logo"><b><h1>LOGO</h1></b></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+@include('user/header')
 
  <!-- NAVBAR ================================================== -->  
  <link href="../assets/css/my-style.css" rel="stylesheet">
 	<!-- NAVBAR ================================================== --> 
 	<style type="text/css">
-	.formLayout
-	{
-		background-color: #134e8f;;
-		border: solid 1px #a1a1a1;
-		padding: 12px;
-		width: 100%;
-	}
+.formLayout {
+    background-color: #011a41;
+    border: solid 1px #a1a1a1;
+    padding: 12px;
+    width: 100%;
+}
 	.formLayout select 
 	{
 		margin-bottom: 5px;
