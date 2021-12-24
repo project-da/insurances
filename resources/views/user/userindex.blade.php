@@ -13,26 +13,19 @@
     <link href="../assets/css/menu.css" rel="stylesheet">
     <link href="../assets/css/font-awesome.css" rel="stylesheet">
 	<script type="text/javascript" src="../assets/js/jquery.min.js"></script>
+	<link href="../assets/css/my-style.css" rel="stylesheet">
 </head>
 <style>
-	div#totop {
-    height: 14%;
-}
-.col-md-4 {
-    margin-top: 3%;
-}
-</style>
-<body>
-<!-- Google Tag Manager (noscript) -->
-<!-- End Google Tag Manager (noscript) -->
- <!-- NAVBAR ================================================== -->  
-@include('user/header')
-
- <!-- NAVBAR ================================================== -->  
- <link href="../assets/css/my-style.css" rel="stylesheet">
-	<!-- NAVBAR ================================================== --> 
-	<style type="text/css">
-    .formLayout {
+	div#totop 
+	{
+       height: 14%;
+    }
+    .col-md-4 
+	{
+       margin-top: 3%;
+    }
+    .formLayout
+    {
        background-color: #011a41;
        border: solid 1px #a1a1a1;
        padding: 12px;
@@ -51,7 +44,6 @@
 		float: left;
 		margin-bottom: 5px;
 		height: 30px;
-		/* border-radius: 5px; */
 		padding-left: 5px;
 	}
 	.formLayout label
@@ -62,12 +54,29 @@
 		text-align: left;
 		padding-right: 20px;
 	}
-	br 	{ clear: left; }
-	.slider-right {	margin-top: 50px; }
-	.buy_link{margin-top: 15px;}
-	.carousel-indicators .active {  background-color: #444; }
-	.carousel-indicators { bottom: -15px;}
-	</style>
+	br 	
+	{ 
+		clear: left; 
+	}
+	.slider-right 
+	{	
+		margin-top: 50px; 
+	}
+	.buy_link
+	{
+		margin-top: 15px;
+	}
+	.carousel-indicators .active 
+	{  
+		background-color: #444; 
+	}
+	.carousel-indicators 
+	{ 
+		bottom: -15px;
+	}
+</style>
+<body>  
+@include('user/header')
 	<!-- slider sec -->
 	<div class="slider-section" style="padding:30px 0px 0px 0px;border-bottom:1px solid #eee;background-image: url('assets/images/header-sky.png');">
       <div class="layout"> 
