@@ -105,11 +105,8 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-
                     <div _ngcontent-ohd-c74="" class="inner_container">
                         <div _ngcontent-ohd-c74="" class="guaranteed-vs-fd_wrp">
-
-
                             <div _ngcontent-ohd-c74="" class="guaranteed-vs-fd_sub_heading"><span _ngcontent-ohd-c74="">vs</span>
                                 <div _ngcontent-ohd-c74="" class="guaranteed_milestone_plan">Guaranteed Savings<br _ngcontent-ohd-c74="" class="ng-star-inserted">Plan
 
@@ -134,7 +131,6 @@
                             <div _ngcontent-ohd-c74="" class="guaranteed_investment_tax_free_wrp">
                                 <div _ngcontent-ohd-c74="" class="guaranteed_investment_tax_free">
                                     <b _ngcontent-ohd-c74="" class="ng-star-inserted">5.85%</b>
-
                                 </div>
                                 <div _ngcontent-ohd-c74="" class="guaranteed_investment_returns_after_tax">
                                     <ul _ngcontent-ohd-c74="">
@@ -169,7 +165,5 @@
         </table>
     </div>
     <!--- //Modelbox---->
-
 </body>
-
 </html>

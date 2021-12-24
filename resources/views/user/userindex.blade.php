@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="healthplan">
 <head>
-<title> landingPage</title>
+<title> Home </title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,12 +32,12 @@
  <link href="../assets/css/my-style.css" rel="stylesheet">
 	<!-- NAVBAR ================================================== --> 
 	<style type="text/css">
-.formLayout {
-    background-color: #011a41;
-    border: solid 1px #a1a1a1;
-    padding: 12px;
-    width: 100%;
-}
+    .formLayout {
+       background-color: #011a41;
+       border: solid 1px #a1a1a1;
+       padding: 12px;
+       width: 100%;
+    }
 	.formLayout select 
 	{
 		margin-bottom: 5px;
