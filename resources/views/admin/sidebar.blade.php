@@ -8,11 +8,9 @@
   <meta name="author" content="Dashboard">
   <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
   <title></title>
-
   <!-- Favicons -->
   <link href="\\" rel="icon">
   <link href="admin/img/apple-touch-nnjhnn.png" rel="apple-touch-icon">
-
   <!-- Bootstrap core CSS -->
   <link href="admin/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!--external css-->
@@ -23,20 +21,9 @@
   <link href="admin/css/style.css" rel="stylesheet">
   <link href="admin/css/style-responsive.css" rel="stylesheet">
   <script src="admin/lib/chart-master/Chart.js"></script>
-
-  <!-- =======================================================
-    Template Name: Dashio
-    Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
-    Author: TemplateMag.com
-    License: https://templatemag.com/license/
-  ======================================================= -->
 </head>
-
 <body>
   <section id="container">
-    <!-- **********************************************************************************************************************************************************
-        TOP BAR CONTENT & NOTIFICATIONS
-        *********************************************************************************************************************************************************** -->
     <!--header start-->
     <header class="header black-bg">
       <div class="sidebar-toggle-box">
@@ -46,7 +33,6 @@
       <a href="adminindex" class="logo"><b>LO<span>GO</span></b></a>
       <!--logo end-->
       <div class="nav notify-row" id="top_menu">
-   
       </div>
       <div class="top-menu">
       <ul class="nav pull-right top-menu">
@@ -58,10 +44,7 @@
       </div>
     </header>
     <!--header end-->
-    <!-- **********************************************************************************************************************************************************
-        MAIN SIDEBAR MENU
-        *********************************************************************************************************************************************************** -->
-    <!--sidebar start-->
+     <!--sidebar start-->
     <aside>
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
@@ -80,8 +63,6 @@
                             <li><a href="tabledit"><i class="fa fa-users"></i>All Policies</a></li>
                         </ul>
                     </li>
-          
-         
           <li class="sub-menu">
             <a href="adminuser">
               <i class="fa fa-users"></i>
@@ -93,8 +74,7 @@
               <i class="fa fa-users"></i>
               <span>Leads</span>
               </a>
-          </li>
-          
+          </li>   
          </ul>
         <!-- sidebar menu end-->
       </div>
@@ -104,5 +84,4 @@
   <script src="admin/lib/jquery.sparkline.js"></script>
   <script src="admin/lib/common-scripts.js"></script>
     </body>
-
 </html>
