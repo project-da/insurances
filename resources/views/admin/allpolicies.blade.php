@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,9 +12,15 @@
   <script src="https://markcell.github.io/jquery-tabledit/assets/js/tabledit.min.js"></script>
 </head>
 <style>
-  .panel.panel-default {width: 93%;}
-  a.btn.btn-info.add-new {margin-left: 78%;}
+  .panel.panel-default {
+    width: 93%;
+  }
+
+  a.btn.btn-info.add-new {
+    margin-left: 78%;
+  }
 </style>
+
 <body>
   @include ('admin/sidebar')
   <!--main content start-->
@@ -25,9 +32,7 @@
             <h3>ALL Policies</h3>
           </div>
           <div class="container">
-            <br/><br/>
-         
-       
+            <br /><br />
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h3 class="panel-title">ALL Policies</h3>
@@ -37,32 +42,31 @@
                   @csrf
                   <table id="editable" class="table table-bordered table-striped">
                     <thead>
-                    <tr>
-                                                    <th>ID</th>
-                                                
-                                                    <th>Images</th>
-                                                    <th>Name</th>
-                                                    <th>Investment</th>
-                                                    <th>YouGive</th>
-                                                    <th>YouGet</th>
-                                                    <th>years</th>
-                                                    <th>Action</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                @foreach($list as $item)
-                                                <tr>
-                                                    <td class="serial">{{$item->id}}</td>
-                                     
-                                                    <td> <span class="product"><img src="{{asset('uploads/images/'. $item->image)}}"></span> </td>
-                                                    <td><span class="gender">{{$item->name}}</span></td>
-                                                    <td><span class="smoking">{{$item->investmoney}}</span></td>
-                                                    <td><span class="income">{{$item->youGive}}</span></td>
-                                                    <td><span class="count">{{$item->YouGet}}</span></td>
-                                                    <td><span class="email">{{$item->years}}</span></td>
-                                             
-                                                </tr>
-                                                @endforeach
+                      <tr>
+                        <th>ID</th>
+                        <th>Images</th>
+                        <th>Name</th>
+                        <th>Investment</th>
+                        <th>YouGive</th>
+                        <th>YouGet</th>
+                        <th>years</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      @foreach($list as $item)
+                      <tr>
+                        <td class="serial">{{$item->id}}</td>
+
+                        <td> <span class="product"><img src="{{asset('uploads/images/'. $item->image)}}"></span> </td>
+                        <td><span class="gender">{{$item->name}}</span></td>
+                        <td><span class="smoking">{{$item->investmoney}}</span></td>
+                        <td><span class="income">{{$item->youGive}}</span></td>
+                        <td><span class="count">{{$item->YouGet}}</span></td>
+                        <td><span class="email">{{$item->years}}</span></td>
+
+                      </tr>
+                      @endforeach
                     </tbody>
                   </table>
                 </div>
@@ -73,39 +77,40 @@
       </div>
     </section>
   </section>
-  
+
 
   <script type="text/javascript">
-  $(document).ready(function() {
-    $.ajaxSetup({
-      headers: {
-        'X-CSRF-Token': $("input[name=_token]").val()
-      }
-    });
-    $('#editable').Tabledit({
-      url: '{{route("tabledit.action")}}',
-      dataType: "json",
-      columns: {
-        identifier: [0, 'id'],
-        editable: [
-        
-          [2, 'name'],
-          [3, 'investmoney'],
-          [4, 'youGive'],
-          [5, 'youGet'],
-          [6, 'years']
-        ]
-      },
-      restoreButton: false,
-      onSuccess: function(data, textStatus, jqXHR) {
-        if (data.action == 'delete') {
-          $('#' + data.id).remove();
-
+    $(document).ready(function() {
+      $.ajaxSetup({
+        headers: {
+          'X-CSRF-Token': $("input[name=_token]").val()
         }
-      }
-    });
+      });
+      $('#editable').Tabledit({
+        url: '{{route("tabledit.action")}}',
+        dataType: "json",
+        columns: {
+          identifier: [0, 'id'],
+          editable: [
 
-  });
-</script>
+            [2, 'name'],
+            [3, 'investmoney'],
+            [4, 'youGive'],
+            [5, 'youGet'],
+            [6, 'years']
+          ]
+        },
+        restoreButton: false,
+        onSuccess: function(data, textStatus, jqXHR) {
+          if (data.action == 'delete') {
+            $('#' + data.id).remove();
+
+          }
+        }
+      });
+
+    });
+  </script>
 </body>
+
 </html>
