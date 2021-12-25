@@ -57,14 +57,12 @@
                       @foreach($list as $item)
                       <tr>
                         <td class="serial">{{$item->id}}</td>
-
                         <td> <span class="product"><img src="{{asset('uploads/images/'. $item->image)}}"></span> </td>
                         <td><span class="gender">{{$item->name}}</span></td>
                         <td><span class="smoking">{{$item->investmoney}}</span></td>
                         <td><span class="income">{{$item->youGive}}</span></td>
                         <td><span class="count">{{$item->YouGet}}</span></td>
                         <td><span class="email">{{$item->years}}</span></td>
-
                       </tr>
                       @endforeach
                     </tbody>
