@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\models\policy;
@@ -14,21 +12,19 @@ class AdminController extends Controller
     function adminindex()
     {
         $policy = DB::table('policies')->count();
-        $leads =  DB::table('details')->count();
-      
-      
+        $leads =  DB::table('details')->count();  
         return view('admin/adminindex',compact('policy','leads'));
     }
     function sidebar()
     {
         return view('admin/sidebar');
     }
-function adminPolicy()
+    function adminPolicy()
     {
         return view('admin/adminpolicy');
     }
     public function addpolicy(Request $request)
-{
+    {
     $add = new policy;
     $add->name = $request->input('name');
     $add->investmoney = $request->input('investmoney');
@@ -45,16 +41,16 @@ function adminPolicy()
     }
     $add->save();
     return redirect()->back()->with('status','Student Image Added Successfully');
-}
-function policydata()
-{
+    }
+    function policydata()
+    {
     $data = array(
         'list' => DB::table('policies')->get()
     );
     return view('admin/allpolicies', $data);
-}
-function action(Request $request)
-{
+    }
+    function action(Request $request)
+    {
     if ($request->ajax()) {
         if ($request->action == 'edit') {
             $data = array(
@@ -82,11 +78,10 @@ function adminuser()
     return view('admin/adminuser');
 }
 
-
 function leads()
 {
     $data = array(
-        'list' => DB::table('Details')->get()
+        'list' => DB::table('details')->get()
     );
     return view('admin/leads', $data);
 }  
@@ -158,8 +153,6 @@ function leads()
                 session(['login.adminlogin' => url()->previous()]);
             }
         }
-
-        return view('login/adminlogin');
+    return view('login/adminlogin');
     }
-  
-}
+    }

@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
-use App\models\policy;
+use Illuminate\Support\Facades\Auth;
+use App\Models\policy;
 use App\models\detail;
 class IndexController extends Controller
 {
@@ -40,7 +41,7 @@ class IndexController extends Controller
             'email' => $request->input('email'),
             'city' => $request->input('city')
         ]);
-        return redirect('compare');
+      return redirect('compare');
         if ($query) {
             return back()->with('success', 'Date have been saved successfuly');
         } else {
@@ -56,7 +57,7 @@ class IndexController extends Controller
     }
     public function searchByprice(Request $req)
     {
-        $list=policy::where('investmoney','>=',$req->min)->where('investmoney','<=',$req->max)->get();
+       $list=policy::where('investmoney','>=',$req->min)->where('investmoney','<=',$req->max)->get();
         return view('user/compare',compact('list'));
     }
         // MARKETLINKED PAGE CONTROLLER// 
@@ -70,6 +71,8 @@ class IndexController extends Controller
  }
  function invest($id)
  {
+    if(Auth::check()){
+      
      $row = DB::table('policies')
          ->where('id', $id)
          ->first();
@@ -78,12 +81,13 @@ class IndexController extends Controller
      ];
      return view('user/invest', $data);
  }
+ return Redirect('login');
+}
  function header()
  { 
      return view('user/header');
-
-
-
  }
+
+
 
 }

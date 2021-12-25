@@ -5,261 +5,162 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <title>Login</title>
 </head>
-
 <style>
-    @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
-
-    * {
-        margin: 0;
-        padding: 0
+    body {
+        background-color: #EBEAEF
     }
 
-    a,
-    a:hover {
-        text-decoration: none;
+    .container {
+        flex-wrap: wrap
     }
 
-    .myform-area {
-        overflow: hidden;
-        padding: 60px 0;
-        background: #f4fffe;
-        position: relative;
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-
-    .myform-area .form-area {
-        position: relative;
-        background: #35517a;
-        width: 100%;
-        height: 400px;
-        overflow: hidden;
-        box-shadow: 0 0 40px 0 #e1e1e1;
-    }
-
-    .myform-area .form-area .form-content,
-    .myform-area .form-area .form-input {
-        position: relative;
-        width: 50%;
-        height: 100%;
-        float: left;
-        box-sizing: border-box;
-    }
-
-    .myform-area .form-area .form-content {
-        width: 50%;
-        padding: 40px 30px;
-    }
-
-    .myform-area .form-area .form-content h2 {
-        color: #fff;
-    }
-
-    .myform-area .form-area .form-content p {
-        color: #fff;
-    }
-
-    .myform-area .form-area .form-content ul {
-        margin-top: 50px;
-    }
-
-    .myform-area .form-area .form-content ul li {
-        display: inline-block;
-        margin-right: 10px;
-    }
-
-    .myform-area .form-area .form-content a i {
-        margin-right: 10px;
-    }
-
-    .myform-area .form-area .form-content .facebook {
-        display: block;
-        padding: 10px 20px;
-        background: #3B579D;
-        color: #fff;
-        font-size: 15px;
-        text-transform: capitalize;
-        border-radius: 4px;
-        border: 1px solid #3B579D;
-        -webkit-transition: all .5s;
-        -o-transition: all .5s;
-        transition: all .5s;
-    }
-
-    .myform-area .form-area .form-content .facebook:hover,
-    .myform-area .form-area .form-content .facebook:focus {
-        background: transparent;
-    }
-
-    .myform-area .form-area .form-content .twitter {
-        display: block;
-        padding: 10px 20px;
-        background: #00ACED;
-        color: #fff;
-        font-size: 15px;
-        text-transform: capitalize;
-        border-radius: 4px;
-        border: 1px solid #00ACED;
-        -webkit-transition: all .5s;
-        -o-transition: all .5s;
-        transition: all .5s;
-    }
-    .myform-area .form-area .form-content .twitter:hover,
-    .myform-area .form-area .form-content .twitter:focus {
-        background: transparent;
-    }
-    .myform-area .form-area .form-input {
-        background-color: white;
-        position: relative;
-        overflow: hidden;
-        box-shadow: 0 0 40px 0 #e1e1e1;
-    }
-    .myform-area .form-area .form-input {
-        width: 50%;
-        background: #fff;
-        padding: 40px 30px;
-    }
-    .myform-area .form-area .form-input h2 {
-        margin-bottom: 20px;
-        color: #07315B;
-    }
-    .myform-area .form-area .form-input input {
-        position: relative;
-        height: 60px;
-        padding: 20px 0;
-    }
-    .myform-area .form-area .form-input textarea {
-        height: 120px;
-        padding: 20px 0;
-    }
-    .myform-area .form-area .form-input input,
-    .myform-area .form-area .form-input textarea {
-        text-transform: capitalize;
-        width: 100%;
-        box-sizing: border-box;
-        outline: none;
+    .card {
         border: none;
-        border-bottom: 2px solid #e1e1e1;
-        color: #07315B;
+        border-radius: 10px;
+        background-color: blue;
+        width: 350px;
+        margin-top: -60px
     }
-    .myform-area .form-area .form-input form .form-group {
+
+    .card {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: blue;
+        background-clip: border-box;
+        border: 1px solid rgba(0, 0, 0, .125);
+        border-radius: .25rem;
     }
-    .myform-area .form-area .form-input form .form-group label {
+
+    p.mb-1 {
+        font-size: 25px;
+        color: #9FB7FD
+    }
+
+    .btn-primary {
+        border: none;
+        background: #5777DE;
+        margin-bottom: 60px
+    }
+
+    .btn-primary small {
+        color: #ffffff;
+    }
+
+    .btn-primary span {
+        font-size: 13px
+    }
+
+    .card.two {
+        border-top-right-radius: 60px;
+        border-top-left-radius: 0
+    }
+
+    .form-group {
+        position: relative;
+        margin-bottom: 2rem
+    }
+
+    .form-control {
+        border: none;
+        border-radius: 0;
+        outline: 0;
+        border-bottom: 1.5px solid #E6EBEE
+    }
+
+    .form-control:focus {
+        box-shadow: none;
+        border-radius: 0;
+        border-bottom: 2px solid #8A97A8
+    }
+
+    .form-control-placeholder {
         position: absolute;
-        text-transform: capitalize;
-        top: 20px;
-        left: 0;
-        pointer-events: none;
-        font-size: 14px;
-        color: #595959;
-        margin-bottom: 0;
-        transition: all .6s;
+        top: 15px;
+        left: 10px;
+        transition: all 200ms;
+        opacity: 0.5;
+        font-size: 80%
     }
-    .myform-area .form-area .form-input input:focus~label,
-    .myform-area .form-area .form-input textarea:focus~label,
-    .myform-area .form-area .form-input input:valid~label,
-    .myform-area .form-area .form-input textarea:valid~label {
-        top: -5px;
-        opacity: 0;
-        left: 0;
-        color: rgba(103, 58, 183);
-        font-size: 12px;
-        color: #07315B;
-        font-weight: bold;
+
+    .form-control:focus+.form-control-placeholder,
+    .form-control:valid+.form-control-placeholder {
+        font-size: 80%;
+        transform: translate3d(0, -90%, 0);
+        opacity: 1;
+        top: 10px;
+        color: #8B92AC
     }
-    .myform-area .form-area .form-input input:focus,
-    .myform-area .form-area .form-input textarea:focus,
-    .myform-area .form-area .form-input input:valid,
-    .myform-area .form-area .form-input textarea:valid {
-        border-bottom: 2px solid rgba(103, 58, 183);
-    }
-    .myform-area .form-area .form-text {
-        margin-top: 30px;
-    }
-    .myform-area .form-area .form-text span a {
-        color: rgba(103, 58, 183);
-    }
-    .myform-area .form-area .myform-button {
-        margin-top: 30px;
-    }
-    .myform-area .form-area .myform-button .myform-btn {
-        width: 100%;
-        height: 50px;
-        font-size: 17px;
-        background: #2c466a;
+
+    .btn-block {
         border: none;
-        border-radius: 50px;
-        color: #fff;
-        cursor: pointer;
-        -webkit-transition: all .5s;
-        -o-transition: all .5s;
-        transition: all .5s;
+        border-radius: 8px;
+        background-color: #506CCF;
+        padding: 10px 0 12px
     }
-    .myform-area .form-area .myform-button .myform-btn:hover {
-        background: #07315B;
+
+    .btn-block:focus {
+        box-shadow: none
     }
-    a.loghere {
-        text-align: center;
-        margin-left: 38%;
+
+    .btn-block span {
+        font-size: 15px;
+        color: #D0E6FF
+    }
+
+    .p-5 {
+        padding: 3rem !important;
+        background-color: #011a41;
+    }
+
+    div#btnid {
+        border: none;
+        background: none;
     }
 </style>
 <body>
-@include('user/header')
-    <br>
-    <section class="myform-area">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="form-area login-form">
-                        <div class="form-content">
-                            <h2>Investment<br>Benifits</h2>
-                            <p>One of the few places where this is especially true is when it comes to managing your 
-                                portfolio. Investment advisors and Research analysts can be hired at a cost, but it’s 
-                                usually a no brainer for most of us when it comes to ‘fee’ & ‘free’. However, We must all 
-                                remember that there are no free lunches in the world & we get what we pay for.</p>
+    @include('user/header')
 
-                        </div>
-                        <div class="form-input">
-                            <h2>Login Form</h2>
-                            <form action="{{url('login')}}" method="POST" id="logForm">
-
-                                @csrf
-                                <div class="form-group">
-                                    <input type="text" id="" name="email" required autofocus>
-                                    <label>User Email</label>
-                                    @if ($errors->has('email'))
-                                    <span class="error">{{ $errors->first('email') }}</span>
-                                    @endif
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" id="" name="password" required="" autofocus>
-                                    <label>password</label>
-                                    @if ($errors->has('password'))
-                                    <span class="error">{{ $errors->first('password') }}</span>
-                                    @endif
-                                </div>
-                                <div class="myform-button">
-                                    <button class="myform-btn">Login</button>
-                                </div>
-                                <hr>
-                                <a href="registration" class="loghere">Register here</a>
-                                @if(Session::has('success'))
-                                <div class="alert alert-success">{{Session::get('success')}}</div>
-                                @endif
-                                @if(Session::has('fail'))
-                                <div class="alert alert-danger">{{Session::get('fail')}}</div>
-                                @endif
-                            </form>
-                        </div>
-                    </div>
+    <div class="container d-flex justify-content-center">
+        <div class="d-flex flex-column justify-content-between">
+            <div class="card mt-3 p-5" style="background-color:#1a3a6c">
+                <div id="btnid" class="btn btn-primary btn-lg">
+                    <h4>Login</h4>
                 </div>
             </div>
+            <form action="{{url('login')}}" method="Post">
+
+                @csrf
+                <div class="card two bg-white px-5 py-4 mb-3">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter Email" name="email" value="{{old('Email')}}" required>
+                        <span class="text-danger">@error('email') {{$message}} @enderror</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Enter Password" name="password" value="{{old('password')}}" required>
+                        <span class="text-danger">@error('password') {{$message}} @enderror</span>
+                    </div>
+                    <button class="btn btn-primary btn-block btn-lg mt-1 mb-2" type="submit"><a href="userindex">
+                            <span>Login<i class="fas fa-long-arrow-alt-right ml-2"></i></span></a></button>
+                    @if(Session::has('success'))
+                    <div class="alert alert-success">{{Session::get('success')}}</div>
+                    @endif
+                    @if(Session::has('fail'))
+                    <div class="alert alert-danger">{{Session::get('fail')}}</div>
+                    @endif
+                    <div class="form-group" style="text-align:center">
+                    <span style="color:blue">New User?<a href="Registration"  style="color:red">RegisterHere</a></span>
+                    </div>
+                </div>
         </div>
-    </section>
-  
+    </div>
 </body>
 
 </html>

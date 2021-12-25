@@ -17,29 +17,22 @@
     <link rel="stylesheet" href="assets\css\compare.css">
     <title>Document</title>
 </head>
-
-
 <body>
     @include('user/header')
-
     <div class="sidenav">
         <br><br>
         <span class="name mt-2"> <strong> Invested Amount per month </strong> </span><br><br>
         <!-- Navigation links in sidebar-->
-
-       
         <form action="/compare" method="post">
                     {{csrf_field()}}
                     <input type="hidden" name="min" value="500">&nbsp;
                     <input type="text" name="max">&nbsp;
                     <input type="submit" class="view" value="edit">
-                </form>
-
+</form>
         <hr>
         <span class="inserted"><strong>Change to</strong> yearly.
                     <!---->
-                </span> <br />
-                <br />
+                </span> <br /><br />
                 <label class="pay">You pay for:</label><br>
                 <select name="pay" id="pays">
                     <option value="10 Years">10 Years</option>
@@ -68,11 +61,7 @@
                 </div>
             </div>
             <div class="col-10" style="padding: 0;">
-
-
-
     </div>
-
     <div class="main"><br><br>
         <h2></h2>
         <div class="row">
@@ -83,11 +72,10 @@
                         <tr>
                             <td width="2%">{{$item->id}}</td>
                             <td width="20%"><br> <img src="{{ asset('uploads/images/'. $item->image) }}" alt="images"> &emsp;<strong> {{ $item->name }}</strong></td>
-                            <td width="4%"><br><strong>YouGet</strong><br> {{ $item->youGive  }} </td>
+                            <td width="4%"><br><strong>YouGet</strong><br> {{ $item->youGive }}</td>
                             <td width="4%"><br><strong>youGive</strong> <br>{{ $item->YouGet }}</td>
                             <td width="5%"><br>
-                                <a href="invest/{{ $item->id }}" class="btn btn-primary btn-xs"> Get Details</a>
-                                <!--<button type="button"class="btn btn-sm btn-success" data-toggle="modal" >{{__('Details') }}</button>-->
+                            <a href="invest/{{ $item->id }}" class="btn btn-primary btn-xs"> Get Details</a>
                             </td>
                         </tr>
                         @endforeach
@@ -109,14 +97,11 @@
                         <div _ngcontent-ohd-c74="" class="guaranteed-vs-fd_wrp">
                             <div _ngcontent-ohd-c74="" class="guaranteed-vs-fd_sub_heading"><span _ngcontent-ohd-c74="">vs</span>
                                 <div _ngcontent-ohd-c74="" class="guaranteed_milestone_plan">Guaranteed Savings<br _ngcontent-ohd-c74="" class="ng-star-inserted">Plan
-
                                 </div>
                                 <div _ngcontent-ohd-c74="" class="guaranteed_fixed_deposits"> Fixed Deposits </div>
                             </div>
                             <div _ngcontent-ohd-c74="" class="guaranteed_investment">
-
                                 <p _ngcontent-ohd-c74="" class="ng-star-inserted">Your Investment Over 10 Years</p>
-
                                 <h2 _ngcontent-ohd-c74="">₹ 1.2 Lacs</h2>
                             </div>
                             <div _ngcontent-ohd-c74="" class="guaranteed_investment_head"> Returns You Get </div>

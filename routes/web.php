@@ -1,5 +1,4 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\AdminController;
 use App\Http\Controllers\IndexController;
@@ -14,7 +13,6 @@ use App\Http\Controllers\AuthController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('user/userindex');
 });
@@ -44,7 +42,6 @@ Route::post('/register-user', [AdminController::class, 'registeruser'])->name('r
 Route::get('userindex',[IndexController::class,'userindex']);
 Route::post('add',[IndexController::class,'add']);
 
-
 Route::get('/compare',[IndexController::class,'compare']);
 Route::post('/save',[IndexController::class,'save'])->name('save');
 Route::post('/compare',[IndexController::class,'compare'])->name('compare');
@@ -54,21 +51,14 @@ Route::post('/compare',[IndexController::class,'searchByprice'])->name('compare'
 Route::get('/marketlinked',[IndexController::class,'marketlinked']);
 Route::post('/marketlinked',[IndexController::class,'marketlinked'])->name('marketlinked');
 
-
 Route::get('/invest', [IndexController::class, 'invest']);
 Route::get('/invest', [IndexController::class, 'invest'])->name('invest');
 Route::get('invest/{id}', [IndexController::class, 'invest']);
 
-Route::get('login',[AuthController::class,'login']);
-Route::post('login',  [AuthController::class, 'postLogin'])->name('login'); 
-Route::get('registration',[AuthController::class,'registration']);
-Route::post('post-registration',[AuthController::class, 'postRegistration']); 
-Route::get('logout',  [AuthController::class, 'logout']);
-
 Route::get('header',  [IndexController::class, 'header']);
 
-
-
-
-
-
+Route::get('login',[AuthController::class,'login']);
+Route::post('login',  [AuthController::class, 'postLogin'])->name('login'); 
+Route::get('Registration',[AuthController::class,'Registration']);
+Route::post('postRegistration',[AuthController::class, 'postRegistration']); 
+Route::get('logout',  [AuthController::class, 'logout']);

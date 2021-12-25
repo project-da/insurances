@@ -50,7 +50,7 @@
       </div>
       <div class="top-menu">
       <ul class="nav pull-right top-menu">
-          <li><a class="logout" href="index" target="_blank">Home</a></li>
+          <li><a class="logout" href="userindex" target="_blank">Home</a></li>
         </ul>&nbsp;&nbsp;
         <ul class="nav pull-right top-menu">
           <li><a class="logout" href="adminlogin">Logout</a></li>

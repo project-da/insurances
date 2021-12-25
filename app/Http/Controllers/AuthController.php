@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
-use App\Models\user;
+use App\Models\User;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -17,9 +17,9 @@ class AuthController extends Controller
         return view('Auth/login');
     }  
  
-    public function registration()
+    public function Registration()
     {
-        return view('Auth/registration');
+        return view('Auth/Registration');
     }
     
      
@@ -65,7 +65,7 @@ class AuthController extends Controller
     public function logout() {
         Session::flush();
         Auth::logout();
-        return Redirect('login');
+        return Redirect('userindex');
     }
 
 }
