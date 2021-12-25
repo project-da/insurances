@@ -15,7 +15,7 @@
   a.btn.btn-info.add-new {margin-left: 78%;}
 </style>
 <body>
-  <?php echo View::make('admin/sidebar'); ?>
+  @include ('admin/sidebar')
   <!--main content start-->
   <section id="main-content">
     <section class="wrapper">
