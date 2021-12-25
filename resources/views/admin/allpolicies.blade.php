@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,12 +14,10 @@
   .panel.panel-default {
     width: 93%;
   }
-
   a.btn.btn-info.add-new {
     margin-left: 78%;
   }
 </style>
-
 <body>
   @include ('admin/sidebar')
   <!--main content start-->
@@ -75,8 +72,6 @@
       </div>
     </section>
   </section>
-
-
   <script type="text/javascript">
     $(document).ready(function() {
       $.ajaxSetup({
@@ -90,7 +85,6 @@
         columns: {
           identifier: [0, 'id'],
           editable: [
-
             [2, 'name'],
             [3, 'investmoney'],
             [4, 'youGive'],
@@ -102,13 +96,10 @@
         onSuccess: function(data, textStatus, jqXHR) {
           if (data.action == 'delete') {
             $('#' + data.id).remove();
-
           }
         }
       });
-
     });
   </script>
 </body>
-
 </html>
