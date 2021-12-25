@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +21,7 @@
   <link href="admin/css/style-responsive.css" rel="stylesheet">
   <script src="admin/lib/chart-master/Chart.js"></script>
 </head>
+
 <body>
   <section id="container">
     <!--header start-->
@@ -35,7 +35,7 @@
       <div class="nav notify-row" id="top_menu">
       </div>
       <div class="top-menu">
-      <ul class="nav pull-right top-menu">
+        <ul class="nav pull-right top-menu">
           <li><a class="logout" href="userindex" target="_blank">Home</a></li>
         </ul>&nbsp;&nbsp;
         <ul class="nav pull-right top-menu">
@@ -44,44 +44,44 @@
       </div>
     </header>
     <!--header end-->
-     <!--sidebar start-->
+    <!--sidebar start-->
     <aside>
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
-       <br>
+          <br>
           <li class="mt">
             <a class="active" href="adminindex">
               <i class="fa fa-dashboard"></i>
               <span>Dashboard</span>
-              </a>
+            </a>
           </li>
           <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Policies</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><a href="adminpolicy"><i class="fa fa-desktop"></i>Add Policies</a></li>
-                            <li><a href="tabledit"><i class="fa fa-users"></i>All Policies</a></li>
-                        </ul>
-                    </li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-glass"></i>Policies</a>
+            <ul class="sub-menu children dropdown-menu">
+              <li><a href="adminpolicy"><i class="fa fa-desktop"></i>Add Policies</a></li>
+              <li><a href="tabledit"><i class="fa fa-users"></i>All Policies</a></li>
+            </ul>
+          </li>
           <li class="sub-menu">
             <a href="adminuser">
               <i class="fa fa-users"></i>
               <span>Users</span>
-              </a>
+            </a>
           </li>
           <li class="sub-menu">
             <a href="leads">
               <i class="fa fa-users"></i>
               <span>Leads</span>
-              </a>
-          </li>   
-         </ul>
+            </a>
+          </li>
+        </ul>
         <!-- sidebar menu end-->
       </div>
     </aside>
     <script src="admin/lib/bootstrap/js/bootstrap.min.js"></script>
-  <script class="include" type="text/javascript" src="admin/lib/jquery.dcjqaccordion.2.7.js"></script>
-  <script src="admin/lib/jquery.sparkline.js"></script>
-  <script src="admin/lib/common-scripts.js"></script>
-    </body>
+    <script class="include" type="text/javascript" src="admin/lib/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="admin/lib/jquery.sparkline.js"></script>
+    <script src="admin/lib/common-scripts.js"></script>
+</body>
 </html>
