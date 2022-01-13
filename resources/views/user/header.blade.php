@@ -86,16 +86,9 @@ span.no {
 <body>
 <div class="bg-warning py-3">
 	<div class="container">
-	<span class="email"><i class="fa fa-envelope"></i>&nbsp; email@gmail.com</span> <span class="no">(+91) - 9876543210 &nbsp;&nbsp; <i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-twitter" aria-hidden="true"></i></span>
-    
-       
+	<span class="email"><i class="fa fa-envelope"></i>&nbsp; email@gmail.com</span> <span class="no">(+91) - 9876543210 &nbsp;&nbsp; <i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-twitter" aria-hidden="true"></i></span> 
 	</div>
 </div>
-
-
-
-
-
 <!-- ============= COMPONENT ============== -->
 <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark ">
  <div class="container">
@@ -104,8 +97,6 @@ span.no {
       <span class="navbar-toggler-icon"></span>
     </button>
   <div class="collapse navbar-collapse" id="main_nav">
-	
-
 	<ul class="navbar-nav ms-auto">
 		<li class="nav-item"><a class="nav-link" href="userindex"><strong>Home</strong> </a></li>
 		<li class="nav-item"><a class="nav-link" href="compare"> <strong>
@@ -140,6 +131,10 @@ span.no {
  </div> <!-- container-fluid.// -->
 </nav>
 <!-- ============= COMPONENT END// ============== -->
+
+
+
+
 
 
 
